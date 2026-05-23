@@ -131,7 +131,7 @@ href="https://wa.me/6287793264991"
       <section id="bundling" className="mx-auto max-w-7xl px-4 py-12">
         <SectionTitle eyebrow="Hemat" title="Bundling Spesial" />
         <Grid>
-          {filteredBundles.map((p) => <ProductCard key={p.name} p={p} />)}
+          {filteredBundles.map((p) => <ProductCard key={p.name} mode={{ kind: "bundle", bundle: p }} />)}
         </Grid>
         {filteredBundles.length === 0 && <Empty />}
       </section>
@@ -140,7 +140,7 @@ href="https://wa.me/6287793264991"
       <section id="karakter" className="mx-auto max-w-7xl px-4 py-12">
         <SectionTitle eyebrow="Katalog" title="Set Karakter" count={filteredChars.length} />
         <Grid>
-          {filteredChars.map((p) => <ProductCard key={p.name} p={p} />)}
+          {filteredChars.map((p) => <ProductCard key={p.name} mode={{ kind: "character", group: p }} />)}
         </Grid>
         {filteredChars.length === 0 && <Empty />}
       </section>
@@ -149,7 +149,7 @@ href="https://wa.me/6287793264991"
       <section id="item" className="mx-auto max-w-7xl px-4 py-12">
         <SectionTitle eyebrow="In-Game" title="Item & Reroll" count={filteredItems.length} />
         <Grid>
-          {filteredItems.map((p) => <ProductCard key={p.name} p={p} />)}
+          {filteredItems.map((p) => <ProductCard key={p.name} mode={{ kind: "item", item: p }} />)}
         </Grid>
         {filteredItems.length === 0 && <Empty />}
       </section>
