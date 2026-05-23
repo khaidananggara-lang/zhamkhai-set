@@ -35,9 +35,7 @@ function Index() {
       <header className="sticky top-0 z-40 border-b border-border/60 bg-background/70 backdrop-blur-xl">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3">
           <a href="#top" className="flex items-center gap-2">
-            <div className="grid h-9 w-9 place-items-center rounded-lg bg-gradient-to-br from-primary to-accent text-primary-foreground font-black">
-              Z
-            </div>
+            <img src={logo} alt="Logo zhamkhai.point" className="h-10 w-10 rounded-lg object-cover ring-1 ring-border" />
             <div className="leading-tight">
               <div className="font-bold tracking-tight">zhamkhai<span className="text-gradient">.point</span></div>
               <div className="text-[10px] uppercase tracking-widest text-muted-foreground">Sailor Piece Shop</div>
