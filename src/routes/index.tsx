@@ -3,6 +3,7 @@ import { characters, items, bundles, vouchers } from "@/lib/catalog";
 import { ProductCard } from "@/components/ProductCard";
 import { Sparkles, Shield, Zap, Ticket, MessageCircle, Search } from "lucide-react";
 import { useMemo, useState } from "react";
+import logo from "@/assets/logo.jpg";
 
 export const Route = createFileRoute("/")({
   component: Index,
@@ -34,9 +35,7 @@ function Index() {
       <header className="sticky top-0 z-40 border-b border-border/60 bg-background/70 backdrop-blur-xl">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3">
           <a href="#top" className="flex items-center gap-2">
-            <div className="grid h-9 w-9 place-items-center rounded-lg bg-gradient-to-br from-primary to-accent text-primary-foreground font-black">
-              Z
-            </div>
+            <img src={logo} alt="Logo zhamkhai.point" className="h-10 w-10 rounded-lg object-cover ring-1 ring-border" />
             <div className="leading-tight">
               <div className="font-bold tracking-tight">zhamkhai<span className="text-gradient">.point</span></div>
               <div className="text-[10px] uppercase tracking-widest text-muted-foreground">Sailor Piece Shop</div>
@@ -63,6 +62,11 @@ href="https://wa.me/6287793264991"
       <section id="top" className="bg-hero relative overflow-hidden">
         <div className="mx-auto max-w-7xl px-4 py-20 md:py-28">
           <div className="mx-auto max-w-3xl text-center">
+            <img
+              src={logo}
+              alt="Logo zhamkhai.point"
+              className="mx-auto mb-6 h-28 w-28 rounded-full object-cover shadow-2xl ring-2 ring-primary/40 md:h-36 md:w-36"
+            />
             <span className="inline-flex items-center gap-1.5 rounded-full border border-border bg-card/60 px-3 py-1 text-xs text-muted-foreground backdrop-blur">
               <Sparkles className="h-3.5 w-3.5 text-[var(--gold)]" /> Roblox · Sailor Piece
             </span>
