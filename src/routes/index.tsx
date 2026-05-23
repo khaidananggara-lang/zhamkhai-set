@@ -23,12 +23,10 @@ export const Route = createFileRoute("/")({
 function Index() {
   const [q, setQ] = useState("");
 
-  const filter = (list: typeof characters) =>
-    list.filter((p) => p.name.toLowerCase().includes(q.toLowerCase()));
-
-  const filteredChars = useMemo(() => filter(characters), [q]);
-  const filteredItems = useMemo(() => filter(items), [q]);
-  const filteredBundles = useMemo(() => filter(bundles), [q]);
+  const match = (name: string) => name.toLowerCase().includes(q.toLowerCase());
+  const filteredChars = useMemo(() => characters.filter((p) => match(p.name)), [q]);
+  const filteredItems = useMemo(() => items.filter((p) => match(p.name)), [q]);
+  const filteredBundles = useMemo(() => bundles.filter((p) => match(p.name)), [q]);
 
   return (
     <main className="min-h-screen">
