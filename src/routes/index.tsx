@@ -119,7 +119,7 @@ href="https://wa.me/6287793264991"
                 </div>
                 <div className="text-right">
                   <div className="text-xs uppercase tracking-widest text-muted-foreground">Diskon</div>
-                  <div className="text-3xl font-extrabold text-[var(--neon)]">{v.discount}</div>
+                  <div className="text-3xl font-extrabold text-[var(--neon)]">{v.discount}%</div>
                 </div>
               </div>
             </div>
