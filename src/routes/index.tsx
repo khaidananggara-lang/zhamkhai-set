@@ -62,6 +62,11 @@ href="https://wa.me/6287793264991"
       <section id="top" className="bg-hero relative overflow-hidden">
         <div className="mx-auto max-w-7xl px-4 py-20 md:py-28">
           <div className="mx-auto max-w-3xl text-center">
+            <img
+              src={logo}
+              alt="Logo zhamkhai.point"
+              className="mx-auto mb-6 h-28 w-28 rounded-full object-cover shadow-2xl ring-2 ring-primary/40 md:h-36 md:w-36"
+            />
             <span className="inline-flex items-center gap-1.5 rounded-full border border-border bg-card/60 px-3 py-1 text-xs text-muted-foreground backdrop-blur">
               <Sparkles className="h-3.5 w-3.5 text-[var(--gold)]" /> Roblox · Sailor Piece
             </span>
