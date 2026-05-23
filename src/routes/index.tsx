@@ -3,6 +3,7 @@ import { characters, items, bundles, vouchers } from "@/lib/catalog";
 import { ProductCard } from "@/components/ProductCard";
 import { Sparkles, Shield, Zap, Ticket, MessageCircle, Search } from "lucide-react";
 import { useMemo, useState } from "react";
+import logo from "@/assets/logo.jpg";
 
 export const Route = createFileRoute("/")({
   component: Index,
