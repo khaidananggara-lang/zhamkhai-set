@@ -48,10 +48,14 @@ export function ProductCard({ mode }: { mode: Mode }) {
   return (
     <div className="group card-glow hover:card-glow-hover relative flex flex-col overflow-hidden rounded-xl border border-border bg-card">
       <div className="relative aspect-square overflow-hidden bg-gradient-to-br from-secondary to-muted">
-        <div className="absolute inset-0 flex flex-col items-center justify-center gap-2 text-muted-foreground">
-          <ImageIcon className="h-10 w-10 opacity-40" />
-          <span className="text-xs">Gambar menyusul</span>
-        </div>
+        {mode.kind === "character" && mode.group.image ? (
+          <img src={mode.group.image} alt={mode.group.name} className="absolute inset-0 h-full w-full object-cover transition group-hover:scale-105" />
+        ) : (
+          <div className="absolute inset-0 flex flex-col items-center justify-center gap-2 text-muted-foreground">
+            <ImageIcon className="h-10 w-10 opacity-40" />
+            <span className="text-xs">Gambar menyusul</span>
+          </div>
+        )}
         {pv.tag && (
           <span className={`absolute left-3 top-3 rounded-full px-2.5 py-0.5 text-[10px] font-bold uppercase tracking-wider ${tagColor[pv.tag]}`}>
             {pv.tag}
