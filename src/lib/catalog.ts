@@ -1,3 +1,5 @@
+import gilgameshImg from "@/assets/char-gilgamesh.jpg";
+
 export type Variant = {
   label: string;
   price: number;
@@ -8,6 +10,7 @@ export type Variant = {
 export type CharacterGroup = {
   name: string;
   variants: Variant[];
+  image?: string;
 };
 
 export type ItemProduct = {
@@ -31,7 +34,7 @@ export const characters: CharacterGroup[] = [
     { label: "V1", price: 1100, desc: "Set Aizen V1" },
     { label: "V2", price: 6000, desc: "Set Aizen V2", tag: "Best" },
   ]},
-  { name: "Gilgamesh", variants: [
+  { name: "Gilgamesh", image: gilgameshImg, variants: [
     { label: "Set", price: 1500, desc: "Set Gilgamesh dasar" },
     { label: "+F", price: 5250, desc: "Set Gilgamesh lengkap + Skill F", tag: "+F" },
   ]},
