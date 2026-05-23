@@ -1,7 +1,7 @@
 import { Product, formatPrice } from "@/lib/catalog";
 import { ImageIcon, ShoppingCart } from "lucide-react";
 
-const WA_NUMBER = "6281234567890"; // placeholder
+const WA_NUMBER = "6287793264991";
 
 export function ProductCard({ p }: { p: Product }) {
   const waLink = `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(
