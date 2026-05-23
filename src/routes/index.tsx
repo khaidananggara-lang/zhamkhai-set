@@ -23,12 +23,10 @@ export const Route = createFileRoute("/")({
 function Index() {
   const [q, setQ] = useState("");
 
-  const filter = (list: typeof characters) =>
-    list.filter((p) => p.name.toLowerCase().includes(q.toLowerCase()));
-
-  const filteredChars = useMemo(() => filter(characters), [q]);
-  const filteredItems = useMemo(() => filter(items), [q]);
-  const filteredBundles = useMemo(() => filter(bundles), [q]);
+  const match = (name: string) => name.toLowerCase().includes(q.toLowerCase());
+  const filteredChars = useMemo(() => characters.filter((p) => match(p.name)), [q]);
+  const filteredItems = useMemo(() => items.filter((p) => match(p.name)), [q]);
+  const filteredBundles = useMemo(() => bundles.filter((p) => match(p.name)), [q]);
 
   return (
     <main className="min-h-screen">
@@ -121,7 +119,7 @@ href="https://wa.me/6287793264991"
                 </div>
                 <div className="text-right">
                   <div className="text-xs uppercase tracking-widest text-muted-foreground">Diskon</div>
-                  <div className="text-3xl font-extrabold text-[var(--neon)]">{v.discount}</div>
+                  <div className="text-3xl font-extrabold text-[var(--neon)]">{v.discount}%</div>
                 </div>
               </div>
             </div>
@@ -133,7 +131,7 @@ href="https://wa.me/6287793264991"
       <section id="bundling" className="mx-auto max-w-7xl px-4 py-12">
         <SectionTitle eyebrow="Hemat" title="Bundling Spesial" />
         <Grid>
-          {filteredBundles.map((p) => <ProductCard key={p.name} p={p} />)}
+          {filteredBundles.map((p) => <ProductCard key={p.name} mode={{ kind: "bundle", bundle: p }} />)}
         </Grid>
         {filteredBundles.length === 0 && <Empty />}
       </section>
@@ -142,7 +140,7 @@ href="https://wa.me/6287793264991"
       <section id="karakter" className="mx-auto max-w-7xl px-4 py-12">
         <SectionTitle eyebrow="Katalog" title="Set Karakter" count={filteredChars.length} />
         <Grid>
-          {filteredChars.map((p) => <ProductCard key={p.name} p={p} />)}
+          {filteredChars.map((p) => <ProductCard key={p.name} mode={{ kind: "character", group: p }} />)}
         </Grid>
         {filteredChars.length === 0 && <Empty />}
       </section>
@@ -151,7 +149,7 @@ href="https://wa.me/6287793264991"
       <section id="item" className="mx-auto max-w-7xl px-4 py-12">
         <SectionTitle eyebrow="In-Game" title="Item & Reroll" count={filteredItems.length} />
         <Grid>
-          {filteredItems.map((p) => <ProductCard key={p.name} p={p} />)}
+          {filteredItems.map((p) => <ProductCard key={p.name} mode={{ kind: "item", item: p }} />)}
         </Grid>
         {filteredItems.length === 0 && <Empty />}
       </section>
