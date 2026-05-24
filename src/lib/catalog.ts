@@ -53,7 +53,7 @@ export const characters: CharacterGroup[] = [
     { label: "Set", price: 1900, desc: "Set Ice Queen dasar" },
     { label: "+F", price: 2200, desc: "Set Ice Queen + Skill F", tag: "+F" },
   ]},
-  { name: "Sukuna", variants: [
+  { name: "Sukuna", image: sukunaImg, variants: [
     { label: "V1", price: 620, desc: "Set Sukuna V1" },
     { label: "V2", price: 1600, desc: "Set Sukuna V2" },
     { label: "+F", price: 8000, desc: "Set Sukuna lengkap + Skill F", tag: "Hot" },
