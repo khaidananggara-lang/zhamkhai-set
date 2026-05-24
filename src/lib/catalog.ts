@@ -2,6 +2,7 @@ import gilgameshImg from "@/assets/char-gilgamesh.jpg";
 import aizenImg from "@/assets/char-aizen.jpg";
 import cidImg from "@/assets/char-cid.jpg";
 import frierenImg from "@/assets/char-frieren.jpg";
+import madaraImg from "@/assets/char-madara.jpg";
 
 export type Variant = {
   label: string;
@@ -42,7 +43,7 @@ export const characters: CharacterGroup[] = [
     { label: "Set", price: 1500, desc: "Set Gilgamesh dasar" },
     { label: "+F", price: 5250, desc: "Set Gilgamesh lengkap + Skill F", tag: "+F" },
   ]},
-  { name: "Madara", variants: [
+  { name: "Madara", image: madaraImg, variants: [
     { label: "Set", price: 3000, desc: "Set Madara" },
   ]},
   { name: "Ice Queen", variants: [
