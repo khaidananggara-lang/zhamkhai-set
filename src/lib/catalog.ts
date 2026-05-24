@@ -1,4 +1,5 @@
 import gilgameshImg from "@/assets/char-gilgamesh.jpg";
+import aizenImg from "@/assets/char-aizen.jpg";
 
 export type Variant = {
   label: string;
@@ -30,7 +31,7 @@ export type BundleProduct = {
 };
 
 export const characters: CharacterGroup[] = [
-  { name: "Aizen", variants: [
+  { name: "Aizen", image: aizenImg, variants: [
     { label: "V1", price: 1100, desc: "Set Aizen V1" },
     { label: "V2", price: 6000, desc: "Set Aizen V2", tag: "Best" },
   ]},
