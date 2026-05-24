@@ -77,17 +77,27 @@ export function ProductCard({ mode }: { mode: Mode }) {
               )}
             </div>
           </div>
-          <Dialog open={open} onOpenChange={setOpen}>
-            <DialogTrigger asChild>
-              <button
-                className="inline-flex items-center gap-1.5 rounded-lg bg-primary px-3 py-2 text-xs font-semibold text-primary-foreground transition hover:opacity-90"
-                aria-label={`Beli ${title(mode)}`}
-              >
-                <ShoppingCart className="h-3.5 w-3.5" /> Beli
-              </button>
-            </DialogTrigger>
-            <CheckoutDialog mode={mode} onDone={() => setOpen(false)} />
-          </Dialog>
+          {mode.kind === "character" && mode.group.limited ? (
+            <button
+              disabled
+              aria-disabled="true"
+              className="inline-flex cursor-not-allowed items-center gap-1.5 rounded-lg bg-muted px-3 py-2 text-xs font-semibold text-muted-foreground"
+            >
+              Limited
+            </button>
+          ) : (
+            <Dialog open={open} onOpenChange={setOpen}>
+              <DialogTrigger asChild>
+                <button
+                  className="inline-flex items-center gap-1.5 rounded-lg bg-primary px-3 py-2 text-xs font-semibold text-primary-foreground transition hover:opacity-90"
+                  aria-label={`Beli ${title(mode)}`}
+                >
+                  <ShoppingCart className="h-3.5 w-3.5" /> Beli
+                </button>
+              </DialogTrigger>
+              <CheckoutDialog mode={mode} onDone={() => setOpen(false)} />
+            </Dialog>
+          )}
         </div>
       </div>
     </div>
