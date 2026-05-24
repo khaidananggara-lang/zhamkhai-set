@@ -1,6 +1,7 @@
 import gilgameshImg from "@/assets/char-gilgamesh.jpg";
 import aizenImg from "@/assets/char-aizen.jpg";
 import cidImg from "@/assets/char-cid.jpg";
+import frierenImg from "@/assets/char-frieren.jpg";
 
 export type Variant = {
   label: string;
@@ -13,6 +14,7 @@ export type CharacterGroup = {
   name: string;
   variants: Variant[];
   image?: string;
+  limited?: boolean;
 };
 
 export type ItemProduct = {
@@ -80,7 +82,7 @@ export const characters: CharacterGroup[] = [
   { name: "Blessed Maiden", variants: [
     { label: "Set", price: 1500, desc: "Set Blessed Maiden" },
   ]},
-  { name: "Great Mage (Frieren)", variants: [
+  { name: "Great Mage (Frieren)", image: frierenImg, limited: true, variants: [
     { label: "Set", price: 3250, desc: "Set Frieren dasar" },
     { label: "+F", price: 5500, desc: "Set Frieren + Skill F", tag: "+F" },
   ]},
