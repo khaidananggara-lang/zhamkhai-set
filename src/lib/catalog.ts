@@ -82,7 +82,7 @@ export const characters: CharacterGroup[] = [
   { name: "Blessed Maiden", variants: [
     { label: "Set", price: 1500, desc: "Set Blessed Maiden" },
   ]},
-  { name: "Great Mage (Frieren)", variants: [
+  { name: "Great Mage (Frieren)", image: frierenImg, limited: true, variants: [
     { label: "Set", price: 3250, desc: "Set Frieren dasar" },
     { label: "+F", price: 5500, desc: "Set Frieren + Skill F", tag: "+F" },
   ]},
