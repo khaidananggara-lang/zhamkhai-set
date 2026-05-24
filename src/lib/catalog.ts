@@ -1,5 +1,6 @@
 import gilgameshImg from "@/assets/char-gilgamesh.jpg";
 import aizenImg from "@/assets/char-aizen.jpg";
+import cidImg from "@/assets/char-cid.jpg";
 
 export type Variant = {
   label: string;
@@ -97,7 +98,7 @@ export const characters: CharacterGroup[] = [
     { label: "Set", price: 3000, desc: "Set DIO dasar" },
     { label: "+F", price: 6000, desc: "Set DIO + Skill F", tag: "+F" },
   ]},
-  { name: "Cid", variants: [
+  { name: "Cid", image: cidImg, variants: [
     { label: "V1", price: 3000, desc: "Set Cid V1" },
     { label: "V2", price: 3800, desc: "Set Cid V2" },
   ]},
