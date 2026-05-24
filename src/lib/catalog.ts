@@ -4,6 +4,7 @@ import cidImg from "@/assets/char-cid.jpg";
 import frierenImg from "@/assets/char-frieren.jpg";
 import madaraImg from "@/assets/char-madara.jpg";
 import icequeenImg from "@/assets/char-icequeen.jpg";
+import gojoImg from "@/assets/char-gojo.jpg";
 
 export type Variant = {
   label: string;
