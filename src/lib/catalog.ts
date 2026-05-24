@@ -2,6 +2,7 @@ import gilgameshImg from "@/assets/char-gilgamesh.jpg";
 import aizenImg from "@/assets/char-aizen.jpg";
 import cidImg from "@/assets/char-cid.jpg";
 import frierenImg from "@/assets/char-frieren.jpg";
+import madaraImg from "@/assets/char-madara.jpg";
 
 export type Variant = {
   label: string;
