@@ -6,6 +6,8 @@ import madaraImg from "@/assets/char-madara.jpg";
 import icequeenImg from "@/assets/char-icequeen.jpg";
 import gojoImg from "@/assets/char-gojo.jpg";
 import sukunaImg from "@/assets/char-sukuna.jpg";
+import altersaberImg from "@/assets/char-altersaber.jpg";
+import qinshiImg from "@/assets/char-qinshi.jpg";
 
 export type Variant = {
   label: string;
@@ -66,10 +68,10 @@ export const characters: CharacterGroup[] = [
     { label: "V2", price: 2000, desc: "Set Gojo V2" },
     { label: "+F", price: 8000, desc: "Set Gojo lengkap + Skill F", tag: "Hot" },
   ]},
-  { name: "Qinshi", variants: [
+  { name: "Qinshi", image: qinshiImg, variants: [
     { label: "Set", price: 1500, desc: "Set Qinshi" },
   ]},
-  { name: "Alter Saber", variants: [
+  { name: "Alter Saber", image: altersaberImg, variants: [
     { label: "Set", price: 600, desc: "Set Alter Saber dasar" },
     { label: "+F", price: 4800, desc: "Set Alter Saber + Skill F", tag: "+F" },
   ]},
