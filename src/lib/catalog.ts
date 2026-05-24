@@ -6,6 +6,8 @@ import madaraImg from "@/assets/char-madara.jpg";
 import icequeenImg from "@/assets/char-icequeen.jpg";
 import gojoImg from "@/assets/char-gojo.jpg";
 import sukunaImg from "@/assets/char-sukuna.jpg";
+import altersaberImg from "@/assets/char-altersaber.jpg";
+import qinshiImg from "@/assets/char-qinshi.jpg";
 
 export type Variant = {
   label: string;
