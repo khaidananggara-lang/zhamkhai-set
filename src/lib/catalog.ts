@@ -13,6 +13,7 @@ export type CharacterGroup = {
   name: string;
   variants: Variant[];
   image?: string;
+  limited?: boolean;
 };
 
 export type ItemProduct = {
