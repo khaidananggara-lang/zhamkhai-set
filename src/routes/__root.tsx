@@ -72,14 +72,18 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
+      { title: "ZHAMKHAI.POINT" },
+      { name: "description", content: "Sailor Piece Emporium offers in-game character sets and items for purchase." },
       { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { property: "og:title", content: "ZHAMKHAI.POINT" },
+      { property: "og:description", content: "Sailor Piece Emporium offers in-game character sets and items for purchase." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
       { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:title", content: "ZHAMKHAI.POINT" },
+      { name: "twitter:description", content: "Sailor Piece Emporium offers in-game character sets and items for purchase." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/3827aefc-0e1b-42dd-9476-126923c5a8de/id-preview-ee63faeb--924afc27-95d8-462a-9999-4d09156ff412.lovable.app-1779601095178.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/3827aefc-0e1b-42dd-9476-126923c5a8de/id-preview-ee63faeb--924afc27-95d8-462a-9999-4d09156ff412.lovable.app-1779601095178.png" },
     ],
     links: [
       {
