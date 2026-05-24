@@ -3,6 +3,7 @@ import aizenImg from "@/assets/char-aizen.jpg";
 import cidImg from "@/assets/char-cid.jpg";
 import frierenImg from "@/assets/char-frieren.jpg";
 import madaraImg from "@/assets/char-madara.jpg";
+import icequeenImg from "@/assets/char-icequeen.jpg";
 
 export type Variant = {
   label: string;
@@ -46,7 +47,7 @@ export const characters: CharacterGroup[] = [
   { name: "Madara", image: madaraImg, variants: [
     { label: "Set", price: 3000, desc: "Set Madara" },
   ]},
-  { name: "Ice Queen", variants: [
+  { name: "Ice Queen", image: icequeenImg, variants: [
     { label: "Set", price: 1900, desc: "Set Ice Queen dasar" },
     { label: "+F", price: 2200, desc: "Set Ice Queen + Skill F", tag: "+F" },
   ]},
