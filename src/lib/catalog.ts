@@ -1,4 +1,5 @@
 import gilgameshImg from "@/assets/char-gilgamesh.jpg";
+import aizenImg from "@/assets/char-aizen.jpg";
 
 export type Variant = {
   label: string;
