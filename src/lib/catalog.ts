@@ -8,6 +8,7 @@ import gojoImg from "@/assets/char-gojo.jpg";
 import sukunaImg from "@/assets/char-sukuna.jpg";
 import altersaberImg from "@/assets/char-altersaber.jpg";
 import qinshiImg from "@/assets/char-qinshi.jpg";
+import soulreaperImg from "@/assets/char-soulreaper.jpg";
 
 export type Variant = {
   label: string;
@@ -75,7 +76,7 @@ export const characters: CharacterGroup[] = [
     { label: "Set", price: 600, desc: "Set Alter Saber dasar" },
     { label: "+F", price: 4800, desc: "Set Alter Saber + Skill F", tag: "+F" },
   ]},
-  { name: "Soul Reaper", variants: [
+  { name: "Soul Reaper", image: soulreaperImg, variants: [
     { label: "Set", price: 1500, desc: "Set Soul Reaper" },
   ]},
   { name: "Anos", variants: [
