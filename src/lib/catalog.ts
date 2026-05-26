@@ -9,6 +9,7 @@ import sukunaImg from "@/assets/char-sukuna.jpg";
 import altersaberImg from "@/assets/char-altersaber.jpg";
 import qinshiImg from "@/assets/char-qinshi.jpg";
 import soulreaperImg from "@/assets/char-soulreaper.jpg";
+import alucardImg from "@/assets/char-alucard.jpg";
 
 export type Variant = {
   label: string;
@@ -61,7 +62,7 @@ export const characters: CharacterGroup[] = [
     { label: "V2", price: 1600, desc: "Set Sukuna V2" },
     { label: "+F", price: 8000, desc: "Set Sukuna lengkap + Skill F", tag: "Hot" },
   ]},
-  { name: "Alucard", variants: [
+  { name: "Alucard", image: alucardImg, variants: [
     { label: "Set", price: 1100, desc: "Set Alucard" },
   ]},
   { name: "Gojo", image: gojoImg, variants: [
